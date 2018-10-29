@@ -8,4 +8,4 @@ apt-get install -y fortune-mod cowsay
 
 docker commit cowsay belfastjug/cowsay
 
-docker run belfastjug/cowsay "/usr/games/cowsay" "Muh"
+docker run belfastjug/cowsay "/usr/games/cowsay" "Moo"
