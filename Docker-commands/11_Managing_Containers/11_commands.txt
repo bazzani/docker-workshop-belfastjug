@@ -2,7 +2,7 @@ ID=$(docker run -d ubuntu sh -c "while true; do echo tick; sleep 1; done")
 docker attach $ID
 
 ID=$(docker run -d ubuntu sh -c "while true; do sleep 1; done")
-docker exec $ID echo "Hello DubJUG" 
+docker exec $ID echo "Hello BelfastJUG" 
 docker exec $ID "/bin/bash" ## TODO check this in PS
 
 ID=$(docker run -d ubuntu sh -c "trap 'echo got sig' 2; while true; do sleep 1; done")

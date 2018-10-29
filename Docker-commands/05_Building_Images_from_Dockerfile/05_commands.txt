@@ -7,9 +7,9 @@ vim Dockerfile
 	RUN apt-get update && apt-get install -y fortune-mod cowsay
 
 ls Dockerfile
-docker build -t dubjug/cowsay-dockerfile .
+docker build -t belfastjug/cowsay-dockerfile .
 
-docker run dubjug/cowsay-dockerfile "/usr/games/cowsay" "Muh"
+docker run belfastjug/cowsay-dockerfile "/usr/games/cowsay" "Muh"
 
 	### List all Cowsay skins
 	for i in $(/usr/games/cowsay -l); do /usr/games/cowsay -f $i "$i"; done
@@ -20,17 +20,17 @@ ENTRYPOINT
 ##########
 	ENTRYPOINT "/usr/games/cowsay" "MuH"
 
-docker build -t dubjug/cowsay-dockerfile .
-docker run dubjug/cowsay-dockerfile
+docker build -t belfastjug/cowsay-dockerfile .
+docker run belfastjug/cowsay-dockerfile
 
 
 #####
 COPY
 ####
-docker build -t dubjug/cowsay-dockerfile .
-docker run dubjug/cowsay-dockerfile "./app.sh"
+docker build -t belfastjug/cowsay-dockerfile .
+docker run belfastjug/cowsay-dockerfile "./app.sh"
 
-docker run dubjug/cowsay-dockerfile "./app.sh" "Muh" "Muh"
+docker run belfastjug/cowsay-dockerfile "./app.sh" "Muh" "Muh"
 
 
 #####

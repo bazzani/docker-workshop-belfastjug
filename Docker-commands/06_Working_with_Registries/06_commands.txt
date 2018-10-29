@@ -1,10 +1,10 @@
-docker build -t barryevans80/cowsay-dubjug .
+docker build -t barryevans80/cowsay-belfastjug .
 docker login
-docker push barryevans80/cowsay-dubjug
+docker push barryevans80/cowsay-belfastjug
 
-docker build -t barryevans80/cowsay-dubjug:stable .
+docker build -t barryevans80/cowsay-belfastjug:stable .
 
-docker pull barryevans80/cowsay-dubjug
+docker pull barryevans80/cowsay-belfastjug
 
 ###############
 openjdk
@@ -27,5 +27,5 @@ mkdir openjdk-jshell; cd openjdk-jshell
 
 docker run -i -t test/openjdk-jshell
 
-	String s = "DubJUG members RoCk!!!"
+	String s = "BelfastJUG members RoCk!!!"
 	System.out.println("Its true... " + s)
