@@ -1,0 +1,42 @@
+Main changes
+-=-=-=-=-=-=
+- Add first docker run command at the very start, get them up and running quckly
+- use `docker container ls -n 15 -s`
+- Show how to create and edit app.sh
+- Show how to run chmod in powershell
+- Move 09_Connecting_Containers_to_the_World after 05
+- Add exercise #1 after Connecting_Containers_to_the_World
+- Add exercise #2 after Using Volumes
+
+
+General changes
+=-=-=-=-=-=-=-=
+- create a base docker image with vim ubuntu-vim
+- Start each section with the command you will focus on
+- Show the --help for each command
+- add a `docker container prune` command to clean up their system at the end
+
+
+New section order
+=-=-=-=-=-=-=-=-=
+03
+04
+05
+09
+++ Containers and volumes
+ - create a volume
+ - mount the volume on your container
+ - share the volume between containers
+ - bind mounts (to host directories)
+...
+++ Docker prune cleanup
+ - docker container prune
+ - docker volume prune
+ - docker images prune
+
+
+Reading
+-=-=-=
+- https://docs.docker.com/storage/volumes/
+- https://docs.docker.com/storage/bind-mounts/
+- https://stackoverflow.com/questions/30133664/how-do-you-list-volumes-in-docker-containers
